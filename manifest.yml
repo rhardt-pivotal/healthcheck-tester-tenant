@@ -1,0 +1,9 @@
+---
+applications:
+  - name: health-check-test-tenant
+    buildpack: java_buildpack_offline
+    memory: 768M
+    instances: 1
+    path: ./target/health-check-test-tenant-0.0.1-SNAPSHOT.jar
+    services:
+    - healthcheck-db
